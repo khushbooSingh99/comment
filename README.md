@@ -13,6 +13,21 @@ The REPLY To COMMENT can be implemented as Map<String, List<String> >; making it
   
 FIREBASE has been used to store the comments and images uploaded by the user.
 
+
+# Dependencies
+Flutter
+Image Picker
+Path provider
+Font Awesome
+Dart Async
+Firebase DataBase
+Firebase Storage
+Firebase Core
+Image Cropper
+Permission Handler
+Firebase Analytics
+Cloud Firestore
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
