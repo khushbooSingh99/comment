@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:comment/submit_field.dart';
 
+
+//root function for uploading comments via the + sign
 class SubmitContent extends StatelessWidget {
 
   @override

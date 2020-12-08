@@ -5,6 +5,9 @@ import 'package:image_picker/image_picker.dart';
 import 'package:image_cropper/image_cropper.dart';
 import 'package:comment/add_image.dart';
 
+
+//takes in user input for comment addition
+
 class EnterField extends StatefulWidget{
 
   @override
@@ -15,10 +18,13 @@ class EnterField extends StatefulWidget{
 
 class _EnterFieldState extends State<EnterField>{
 
+    //TextEditingController for proceesing what the user wrote
   final _myControlUser = TextEditingController();
   final _myControlComment= TextEditingController();
   DatabaseReference _ref;
 
+
+  //creates unique key in database for storage
   final _formKey= GlobalKey<FormState>();
 
   @override
@@ -87,6 +93,8 @@ class _EnterFieldState extends State<EnterField>{
     );
   }
 
+
+  //function to add the input data to RTDB
   void addComment(){
     String userName = _myControlUser.text;
     String commented = _myControlComment.text;
@@ -96,6 +104,7 @@ class _EnterFieldState extends State<EnterField>{
       'comment': commented,
       'replies': commented,
     };
+    //was trying to create List<string> but was not succesful
 
     _ref.push().set(commentList).then((value) {
       Navigator.pop(context);

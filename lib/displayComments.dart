@@ -5,6 +5,9 @@ import 'package:overflow_view/overflow_view.dart';
 import 'package:comment/submit_field.dart';
 
 
+//displaying the added comments till-date
+
+//the comments are sorted by USER NAMES
 class DisplayCommentsAdded extends StatefulWidget{
 
   @override
@@ -14,6 +17,7 @@ class DisplayCommentsAdded extends StatefulWidget{
 
 class _DisplayCommentState extends State<DisplayCommentsAdded> {
 
+  //for taking reply for comment
   final _myControlUser = TextEditingController();
 
   Query _ref;
@@ -22,11 +26,12 @@ class _DisplayCommentState extends State<DisplayCommentsAdded> {
     super.initState();
     _ref = FirebaseDatabase.instance.reference()
         .child('Comments').orderByChild('user');
+    //reference to the data in RTDB
   }
 
 
 
-  //this method will return us a
+  //this returns us a listitem to be added as a view in the listItem screen for comments
 
   Widget _buildListItem( {Map comment}){
     return Container(

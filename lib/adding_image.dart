@@ -5,6 +5,8 @@ import 'package:firebase_storage/firebase_storage.dart';
 import 'dart:io';
 import 'package:path/path.dart';
 
+
+//to upload image to cloud storage
 class ProfilePage extends StatefulWidget {
 
   @override
@@ -17,6 +19,7 @@ class _ProfilePageState extends State<ProfilePage> {
   @override
   Widget build(BuildContext context) {
 
+    //to select image from gallery using image _picker
     Future getImage() async {
       var image = await ImagePicker.pickImage(source: ImageSource.gallery);
 
@@ -26,16 +29,19 @@ class _ProfilePageState extends State<ProfilePage> {
       });
     }
 
+
+    //uploading to the cloyd storage
     Future uploadPic(BuildContext context) async {
-      //future: Firebase.initializeApp();
+
       String fileName = basename(_image.path);
       Reference ref = storage.ref().child(fileName);
+
      // Reference firebaseStorageRef = FirebaseStorage.instance.ref().child(fileName);
       UploadTask uploadTask = ref.putFile(_image);
 
       setState(() {
         print("Uploaded to: FIREBASE CLOUD");
-        Scaffold.of(context).showSnackBar(SnackBar(content: Text('Profile Picture Uploaded')));
+        Scaffold.of(context).showSnackBar(SnackBar(content: Text('WoHOO!! Photo has been uploaded!')));
       });
     }
 

@@ -9,6 +9,12 @@ import 'package:comment/add_image.dart';
 import 'package:comment/adding_image.dart';
 import 'package:comment/viewing_image.dart';
 
+//this function is for the homepage of app
+//where you have icons to :
+//add comment using + sign at bottom
+//upload image to firebase
+//view comments
+//view uploaded images
 
 class Display extends StatefulWidget{
   @override

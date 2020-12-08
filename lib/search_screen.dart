@@ -35,6 +35,10 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_database/firebase_database.dart';
 
+
+
+//was not able to implement it
+//but will make a new branch if I do get a code
 class SearchQuery extends StatefulWidget{
 
   @override

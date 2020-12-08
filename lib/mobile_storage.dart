@@ -1,6 +1,7 @@
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 
+//defining custom class to make code sorted
 class FireStorageService extends ChangeNotifier {
   FireStorageService._();
   FireStorageService();

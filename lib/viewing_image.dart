@@ -3,8 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:comment/fire_storage_service.dart';
 
 
+//this file is for viewing the uploaded image
+
+
 class ViewMe extends StatelessWidget {
-  // This widget is the root of your application.
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -20,7 +23,7 @@ class ViewMe extends StatelessWidget {
 final Color yellow = Color(0xfffbc31b);
 final Color orange = Color(0xfffb6900);
 final String image1 = "image_picker5972647451141961561.jpg";
-final String image2 = "images/carrots.jpg";
+final String image2 = "image_picker695244893245830209.jpg";
 
 String image = image1;
 
@@ -30,6 +33,7 @@ class LoadFirbaseStorageImage extends StatefulWidget {
       _LoadFirbaseStorageImageState();
 }
 
+//to load image widget with the image uploaded on our firestore cloyd storage
 class _LoadFirbaseStorageImageState extends State<LoadFirbaseStorageImage> {
 
 
@@ -137,6 +141,8 @@ class _LoadFirbaseStorageImageState extends State<LoadFirbaseStorageImage> {
     );
   }
 
+
+  //getting image from the cloud storage
   Future<Widget> _getImage(BuildContext context, String image) async {
     Image m;
     await FireStorageService.loadFromStorage(context, image)
@@ -146,6 +152,9 @@ class _LoadFirbaseStorageImageState extends State<LoadFirbaseStorageImage> {
         fit: BoxFit.scaleDown,
       );
     });
+    //NOTE : lacks random loading of data, as there is some issue in download.url parsing
+    //but this is the structure we must have to achieve it
+    //needs a bit debugging
 
     return m;
   }
