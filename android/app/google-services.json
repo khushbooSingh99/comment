@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "233212859437",
+    "firebase_url": "https://handle-comment-default-rtdb.firebaseio.com",
+    "project_id": "handle-comment",
+    "storage_bucket": "handle-comment.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:233212859437:android:406c1552e6f3db271a14a4",
+        "android_client_info": {
+          "package_name": "com.example.comment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "233212859437-pf3gsvi4f061nj4dljsd71qdmlteed5e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCooYFzjOiJk_hencGuVQthSlwZ5CRJ_XQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "233212859437-pf3gsvi4f061nj4dljsd71qdmlteed5e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
