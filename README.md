@@ -15,8 +15,10 @@ FIREBASE has been used to store the comments and images uploaded by the user.
 
 
 # Dependencies
-Flutter
-Image Picker
+
+
+1. Flutter
+2. Image Picker
 Path provider
 Font Awesome
 Dart Async
