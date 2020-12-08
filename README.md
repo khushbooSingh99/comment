@@ -1,4 +1,4 @@
-# comment
+# Comment_Handler
 
 A Flutter Application made during a 2-Day Short-term Internship at Diverta.co. 
 This app implements basic function of comment handling (Single Post Comment System) :
@@ -19,16 +19,16 @@ FIREBASE has been used to store the comments and images uploaded by the user.
 
 1. Flutter
 2. Image Picker
-Path provider
-Font Awesome
-Dart Async
-Firebase DataBase
-Firebase Storage
-Firebase Core
-Image Cropper
-Permission Handler
-Firebase Analytics
-Cloud Firestore
+3. Path provider
+4. Font Awesome
+5. Dart Async
+6. Firebase DataBase
+7. Firebase Storage
+8. Firebase Core
+9. Image Cropper
+10. Permission Handler
+11. Firebase Analytics
+12. Cloud Firestore
 
 ## Getting Started
 
