@@ -1,6 +1,6 @@
 # Comment_Handler
 
-A Flutter Application made during a 2-Day Short-term Internship at Diverta.co. 
+A Flutter Application made during a 2-Day Short-term Internship at Diverta. Inc. 
 This app implements basic function of comment handling (Single Post Comment System) :
 1. Add comments.
 2. View added comments till date.
