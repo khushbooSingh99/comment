@@ -31,8 +31,6 @@ FIREBASE has been used to store the comments and images uploaded by the user.
 12. Cloud Firestore
 
 
-# ScreenShots
-
 
 
 ## Getting Started
