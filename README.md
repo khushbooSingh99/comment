@@ -1,6 +1,17 @@
 # comment
 
-A new Flutter application.
+A Flutter Application made during a 2-Day Short-term Internship at Diverta.co. 
+This app implements basic function of comment handling (Single Post Comment System) :
+1. Add comments.
+2. View added comments till date.
+3. Upload Image file.
+4. View Uploaded images.
+
+The SEARCH COMMENTS option, in full-text mode can be implemented by "FireStore" and a third-party app like "Algolia/ElasticSearch", else we can also make "Trie" of comments and search using it.
+
+The REPLY To COMMENT can be implemented as Map<String, List<String> >; making it a one-level reply back system.
+  
+FIREBASE has been used to store the comments and images uploaded by the user.
 
 ## Getting Started
 
